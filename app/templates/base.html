@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+   <head>
+      <title>
+         {% block title %}Homepage{% endblock %}
+      </title>
+        <link rel="stylesheet" href="{% static 'bootstrap-v5.0.2/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'fa/css/all.min.css' %}">
+   </head>
+   <body>
+      {% block content %}
+         Body content
+      {% endblock %}
+      <script src="{% static 'bootstrap-v5.0.2/js/bootstrap.min.js' %}"></script>
+   </body>
+</html>
