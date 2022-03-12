@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+admin.site.site_header = "OMS Admin"
+admin.site.site_title = "OMS Admin Portal"
+admin.site.index_title = "Welcome to OMS Portal"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('frontend.urls')),
