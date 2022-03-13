@@ -6,15 +6,21 @@
 1. Create virtual environment
 `$ python3 -m venv tutorial-env
 `
+
 2. Activate virtual environment
 ` $ source tutorial-env/bin/activate
 `
+
 3. Clone repo
 `$ git clone git@github.com:indranandjha1993/oms.git
 `
+
 4. Install dependencies
-`sh
-$ pip install -r requirements.txt
+`$ pip install -r requirements.txt
+`
+
+5. Run project
+`$ pip manage.py runserver
 `
 
 Test it out at [http://localhost:8000](http://localhost:8000).
