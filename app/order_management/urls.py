@@ -23,4 +23,5 @@ admin.site.index_title = "Welcome to OMS Portal"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('frontend.urls')),
+    path('api/', include('api.urls')),
 ]
