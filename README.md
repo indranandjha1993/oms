@@ -1,32 +1,27 @@
 # Dockerizing Django with Postgres, Gunicorn, and Nginx
 
-### Manual
-# Create a virtual environment to isolate our package dependencies locally
+## Manual
+### Create a virtual environment to isolate our package dependencies locally
+
 1. Create virtual environment
-```sh
-    $ python3 -m venv tutorial-env
-    ```
+`$ python3 -m venv tutorial-env
+`
 2. Activate virtual environment
-python3 -m venv env
-```sh
-    $ source tutorial-env/bin/activate
-    ```
+` $ source tutorial-env/bin/activate
+`
+3. Clone repo
+`$ git clone git@github.com:indranandjha1993/oms.git
+`
+4. Install dependencies
+`sh
+$ pip install -r requirements.txt
+`
 
-# Clone repo
-
-    ```sh
-    $ git clone git@github.com:indranandjha1993/oms.git
-    ```
-# Install dependencies
-
-    ```sh
-    $ pip install -r requirements.txt
-    ```
 Test it out at [http://localhost:8000](http://localhost:8000).
 
-### Development
+## Development
 
-Uses the default Django development server.
+### Uses the default Django development server.
 
 1. Rename *.env.dev-sample* to *.env.dev*.
 1. Update the environment variables in the *docker-compose.yml* and *.env.dev* files.
@@ -38,9 +33,9 @@ Uses the default Django development server.
 
     Test it out at [http://localhost:8000](http://localhost:8000). The "app" folder is mounted into the container and your code changes apply automatically.
 
-### Production
+## Production
 
-Uses gunicorn + nginx.
+###Uses gunicorn + nginx.
 
 1. Rename *.env.prod-sample* to *.env.prod* and *.env.prod.db-sample* to *.env.prod.db*. Update the environment variables.
 1. Build the images and run the containers:
