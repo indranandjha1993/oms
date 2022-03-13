@@ -1,5 +1,29 @@
 # Dockerizing Django with Postgres, Gunicorn, and Nginx
 
+### Manual
+# Create a virtual environment to isolate our package dependencies locally
+1. Create virtual environment
+```sh
+    $ python3 -m venv tutorial-env
+    ```
+2. Activate virtual environment
+python3 -m venv env
+```sh
+    $ source tutorial-env/bin/activate
+    ```
+
+# Clone repo
+
+    ```sh
+    $ git clone git@github.com:indranandjha1993/oms.git
+    ```
+# Install dependencies
+
+    ```sh
+    $ pip install -r requirements.txt
+    ```
+Test it out at [http://localhost:8000](http://localhost:8000).
+
 ### Development
 
 Uses the default Django development server.
